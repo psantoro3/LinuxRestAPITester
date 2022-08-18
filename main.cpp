@@ -201,8 +201,7 @@ int main()
 			string singleLine = contentStr.substr(0, contentStr.find("\r\n"));
 			contentStr = contentStr.substr(contentStr.find("\r\n") + 2);
 
-			// this line should be the length of the next 'chunk', in hex.  for this api call,
-			// it should always be 19 decimal, 13 hex.
+			// this line should be the length of the next 'chunk', in hex. 
 			contentLength = stoi(singleLine, nullptr, 16);
 	
 			// get the next 'line', which will be the payload from the API.  It should be
