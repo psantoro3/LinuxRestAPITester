@@ -1,11 +1,7 @@
-#include <sys/stat.h>
-#include <vector>
-#include <sstream>
+
 #include <csignal>
 #include <thread>
-#include <sys/ioctl.h>
 #include <arpa/inet.h>
-#include <termios.h>
 #include <unistd.h>
 #include <iostream>
 #include <string.h>
