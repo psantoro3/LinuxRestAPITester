@@ -4,10 +4,6 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # ALTA Specific stuff
-Updater/.vs/
-/Updater/.vs
-/ExpertLinux-S_Deploy/Current
-/ExpertLinux-S_Deploy/Updater
 *.gz
 .vs.*
 .Debug.*
