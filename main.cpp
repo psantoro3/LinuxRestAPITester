@@ -205,7 +205,7 @@ int main()
 			// it should always be 19 decimal, 13 hex.
 			contentLength = stoi(singleLine, nullptr, 16);
 	
-			// get the next 'line', which will be the date/time from the API.  It should be
+			// get the next 'line', which will be the payload from the API.  It should be
 			// exactly the length given in the first chunk size.
 			singleLine = contentStr.substr(0, contentStr.find("\r\n"));
 
