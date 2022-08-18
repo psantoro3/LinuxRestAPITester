@@ -225,9 +225,6 @@ int main()
 			int lenLen = returnStr.find("\r\n", pos) - pos - 16;	// 16 is the length of 'Content-Length: '
 			string lenStr = returnStr.substr(pos + 16, lenLen);
 			contentLength = stoi(lenStr);
-			if (contentLength != 19) {
-				return -1;
-			}
 
 			// make a string of the content (everything past the blank line, for the length given)
 			contentStr = returnStr.substr(returnStr.find("\r\n\r\n") + 4, contentLength);
